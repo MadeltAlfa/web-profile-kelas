@@ -4,78 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Tim</title>
+    <title>Famous Profil</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body class="bg-slate-50 font-sans leading-relaxed text-slate-800">
-    <header class="text-center py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white shadow-lg mb-12">
-        <h1 class="text-4xl font-bold tracking-tight">Profil Tim</h1>
-    </header>
+    <div class="min-h-screen bg-gradient-to-br from-blue-600 via-purple-700 to-pink-500 bg-fixed">
+        <header class="text-center py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white shadow-lg mb-12">
+            <h1 class="text-4xl font-bold tracking-tight">FAMOUS SMABAH</h1>
+        </header>
 
-    <div class="container mx-auto px-4">
-        <section class="team">
-            <div class="leaders grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                <!-- Ketua -->
-                <div
-                    class="member relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                    <img src="./images/ketua.png" alt="Ketua"
-                        class="w-full h-64 object-cover border-b-4 border-blue-600">
-                    <div class="p-4 text-center">
-                        <p class="name font-semibold text-blue-800 text-xl transition-opacity duration-300">Ketua</p>
-                        <p
-                            class="sosmed absolute inset-0 flex items-center justify-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300 text-blue-600 font-medium">
-                            @ketua_sosmed</p>
+        <div class="container mx-auto px-4 mt-4">
+            <!-- Tombol Navigasi -->
+            <button id="prev"
+                class="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full shadow-md hover:bg-gray-700 z-10">
+                ←
+            </button>
+            <button id="next"
+                class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full shadow-md hover:bg-gray-700 z-10">
+                →
+            </button>
+
+            <section class="team">
+                <div class="relative w-full overflow-x-hidden">
+
+                    <!-- Container Scrollable -->
+                    <div id="slider"
+                        class="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide py-6">
+                        <!-- Foto 1 -->
+                        <div
+                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
+                            <img src="./images/grup_1.webp" alt=""
+                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
+                            <div class="p-4 text-center">
+                                <p class="name font-semibold text-blue-800 text-xl">Buka Bersama</p>
+                            </div>
+                        </div>
+
+                        <!-- Foto 2 -->
+                        <div
+                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
+                            <img src="./images/grup_2.webp" alt=""
+                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
+                            <div class="p-4 text-center">
+                                <p class="name font-semibold text-blue-800 text-xl">Buka Bersama</p>
+                            </div>
+                        </div>
+
+                        <!-- Foto 3 -->
+                        <div
+                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
+                            <img src="./images/grup_3.webp" alt=""
+                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
+                            <div class="p-4 text-center">
+                                <p class="name font-semibold text-blue-800 text-xl">MPLS</p>
+                            </div>
+                        </div>
+
+                        <!-- Foto 4 -->
+                        <div
+                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
+                            <img src="./images/grup_4.webp" alt=""
+                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
+                            <div class="p-4 text-center">
+                                <p class="name font-semibold text-blue-800 text-xl">-</p>
+                            </div>
+                        </div>
+
+                        <!-- Foto 5 -->
+                        <div
+                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
+                            <img src="./images/grup_5.webp" alt=""
+                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
+                            <div class="p-4 text-center">
+                                <p class="name font-semibold text-blue-800 text-xl">STEKOM</p>
+                            </div>
+                        </div>
+
+                        <!-- Foto 6 -->
+                        <div
+                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
+                            <img src="./images/grup_6.webp" alt=""
+                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
+                            <div class="p-4 text-center">
+                                <p class="name font-semibold text-blue-800 text-xl">Pesantren Kilat</p>
+                            </div>
+                        </div>
+
+                        <!-- Foto 7 -->
+                        <div
+                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
+                            <img src="./images/grup_7.webp" alt=""
+                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
+                            <div class="p-4 text-center">
+                                <p class="name font-semibold text-blue-800 text-xl">Bersama Walikelas</p>
+                            </div>
+                        </div>
+
+                        <!-- Foto 8 -->
+                        <div
+                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
+                            <img src="./images/grup_8.webp" alt=""
+                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
+                            <div class="p-4 text-center">
+                                <p class="name font-semibold text-blue-800 text-xl">Pagelaran</p>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
 
-                <!-- Wakil -->
-                <div
-                    class="member relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                    <img src="./images/wakil.jpg" alt="Wakil"
-                        class="w-full h-64 object-cover border-b-4 border-blue-600">
-                    <div class="p-4 text-center">
-                        <p class="name font-semibold text-blue-800 text-xl transition-opacity duration-300">Wakil</p>
-                        <p
-                            class="sosmed absolute inset-0 flex items-center justify-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300 text-blue-600 font-medium">
-                            @wakil_sosmed</p>
-                    </div>
-                </div>
-            </div>
+                    <!-- Grid Anggota -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8 py-8">
+                        <script>
+                            const anggota = [
+                                { nama: "Anggota 1", sosmed: "@anggota1_sosmed", kata: "Gassss" },
+                                { nama: "Anggota 2", sosmed: "@anggota2_sosmed" },
+                                { nama: "Anggota 3", sosmed: "@anggota3_sosmed" },
+                                { nama: "Anggota 4", sosmed: "@anggota4_sosmed" },
+                                { nama: "Anggota 5", sosmed: "@anggota5_sosmed" },
+                                { nama: "Anggota 6", sosmed: "@anggota5_sosmed" },
+                                { nama: "Anggota 7", sosmed: "@anggota5_sosmed" },
+                                { nama: "Anggota 8", sosmed: "@anggota5_sosmed" },
+                                { nama: "Anggota 9", sosmed: "@anggota5_sosmed" },
+                                { nama: "Anggota 10", sosmed: "@anggota5_sosmed" },
+                                // ... data anggota lainnya
+                            ];
 
-            <!-- Grid Anggota -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8 py-8">
-                <script>
-                    const anggota = [
-                        { nama: "Anggota 1", sosmed: "@anggota1_sosmed", kata: "Gassss" },
-                        { nama: "Anggota 2", sosmed: "@anggota2_sosmed" },
-                        { nama: "Anggota 3", sosmed: "@anggota3_sosmed" },
-                        { nama: "Anggota 4", sosmed: "@anggota4_sosmed" },
-                        { nama: "Anggota 5", sosmed: "@anggota5_sosmed" },
-                        { nama: "Anggota 6", sosmed: "@anggota5_sosmed" },
-                        { nama: "Anggota 7", sosmed: "@anggota5_sosmed" },
-                        { nama: "Anggota 8", sosmed: "@anggota5_sosmed" },
-                        { nama: "Anggota 9", sosmed: "@anggota5_sosmed" },
-                        { nama: "Anggota 10", sosmed: "@anggota5_sosmed" },
-                        // ... data anggota lainnya
-                    ];
-
-                    anggota.forEach((item, index) => {
-                        document.write(`
+                            anggota.forEach((item, index) => {
+                                document.write(`
                             <div class="member relative bg-white rounded-lg overflow-hidden shadow-md hover:-translate-y-1 hover:rotate-2 hover:shadow-lg transition-all duration-300">
-                                <img src="./images/anggota${index + 1}.jpg" alt="${item.nama}" class="w-full h-48 md:h-56 object-cover border-b-2 border-blue-600">
+                                <img src="./images/anggota${index + 1}.webp" alt="${item.nama}" class="w-full h-64 md:h-72 object-cover border-b-2 border-blue-600 object-top">
                                 <div class="p-3 text-center relative">
-                                    <p class="name font-medium text-slate-700 transition-opacity duration-300">${item.nama}</p>
-                                    <p class="sosmed absolute inset-0 flex items-center justify-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300 text-blue-600 font-medium">${item.sosmed}</p>
+                                    <p class="name font-medium text-slate-700 transition-opacity duration-300 select-none">${item.nama}</p>
+                                    <p class="sosmed absolute inset-0 flex items-center justify-center bg-white opacity-0 hover:opacity-100 transition-opacity duration-300 text-blue-600 font-medium select-none">${item.sosmed}</p>
                                 </div>
                             </div>
                         `);
-                    });
-                </script>
-            </div>
-        </section>
+                            });
+                        </script>
+                    </div>
+            </section>
+        </div>
     </div>
 </body>
+<script>
+    const slider = document.getElementById("slider");
+    const prev = document.getElementById("prev");
+    const next = document.getElementById("next");
+
+    // Ambil semua gambar dalam slider
+    const items = slider.children;
+    let currentIndex = 0; // Indeks gambar aktif
+
+    function scrollToCenter(index) {
+        if (index >= 0 && index < items.length) {
+            const item = items[index];
+            const sliderRect = slider.getBoundingClientRect();
+            const itemRect = item.getBoundingClientRect();
+
+            // Hitung posisi tengah
+            const scrollLeft = item.offsetLeft - (slider.clientWidth / 2) + (item.clientWidth / 2);
+
+            // Geser slider ke posisi yang dihitung
+            slider.scrollTo({ left: scrollLeft, behavior: "smooth" });
+
+            currentIndex = index; // Perbarui indeks saat ini
+        }
+    }
+
+    // Klik tombol Next
+    next.addEventListener("click", () => {
+        if (currentIndex < items.length - 1) {
+            scrollToCenter(currentIndex + 1);
+        }
+    });
+
+    // Klik tombol Prev
+    prev.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            scrollToCenter(currentIndex - 1);
+        }
+    });
+
+</script>
 
 </html>
