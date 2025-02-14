@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famous Profile</title>
+    <title>Famous Profil</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <style>
@@ -61,127 +61,72 @@
 <body class="bg-slate-50 font-sans leading-relaxed text-slate-800">
 
 
-    <div
-        class="min-h-screen bg-gradient-to-br from-blue-600 via-purple-700 to-pink-500 bg-fixed relative overflow-hidden">
-        <!-- Animated Background Elements -->
+    <div class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-400 to-white bg-fixed relative overflow-hidden">
         <div class="absolute inset-0 overflow-hidden">
             <div
-                class="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-300/20 rounded-full blur-2xl animate-float">
+                class="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-cyan-300/20 rounded-full blur-2xl animate-float">
             </div>
             <div
-                class="absolute -bottom-20 -right-20 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-cyan-300/20 rounded-full blur-2xl animate-float animation-delay-2000">
+                class="absolute -bottom-20 -right-20 w-96 h-96 bg-gradient-to-r from-indigo-500/20 to-sky-300/20 rounded-full blur-2xl animate-float animation-delay-2000">
             </div>
+
         </div>
 
         <header
-            class="text-center py-16 backdrop-blur-xl bg-white/10 shadow-2xl mb-12 mx-4 rounded-xl border border-white/20 relative">
+            class="mt-4 text-center py-16 backdrop-blur-xl bg-white/10 shadow-2xl mb-12 mx-4 rounded-xl border border-white/20 relative">
             <div class="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-pink-500/30 rounded-xl -z-10"></div>
             <h1
                 class="text-4xl font-bold tracking-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] animate-float-slow">
                 FAMOUS SMABAH
             </h1>
-
-
         </header>
 
         <div class="container mx-auto px-4 mt-4">
-            <!-- Tombol Navigasi -->
-            <button id="prev"
-                class="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full shadow-md hover:bg-gray-700 z-10">
-                ←
-            </button>
-            <button id="next"
-                class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full shadow-md hover:bg-gray-700 z-10">
-                →
-            </button>
-
             <section class="team">
+
+                <!-- Foto Bersama -->
                 <div class="relative w-full overflow-x-hidden">
-
-                    <!-- Container Scrollable -->
+                    <button id="prev"
+                        class="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full shadow-md hover:bg-gray-700 z-10">
+                        ←
+                    </button>
                     <div id="slider"
-                        class="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide py-6">
-                        <!-- Foto 1 -->
-                        <div
-                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                            <img src="./images/grup_1.webp" alt=""
-                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
-                            <div class="p-4 text-center">
-                                <p class="name font-semibold text-blue-800 text-xl">Buka Bersama</p>
-                            </div>
+                        class="relative flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide py-6">
+                        <div id="members-container">
                         </div>
-
-                        <!-- Foto 2 -->
-                        <div
-                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                            <img src="./images/grup_2.webp" alt=""
-                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
-                            <div class="p-4 text-center">
-                                <p class="name font-semibold text-blue-800 text-xl">Buka Bersama</p>
-                            </div>
-                        </div>
-
-                        <!-- Foto 3 -->
-                        <div
-                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                            <img src="./images/grup_3.webp" alt=""
-                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
-                            <div class="p-4 text-center">
-                                <p class="name font-semibold text-blue-800 text-xl">MPLS</p>
-                            </div>
-                        </div>
-
-                        <!-- Foto 4 -->
-                        <div
-                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                            <img src="./images/grup_4.webp" alt=""
-                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
-                            <div class="p-4 text-center">
-                                <p class="name font-semibold text-blue-800 text-xl">-</p>
-                            </div>
-                        </div>
-
-                        <!-- Foto 5 -->
-                        <div
-                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                            <img src="./images/grup_5.webp" alt=""
-                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
-                            <div class="p-4 text-center">
-                                <p class="name font-semibold text-blue-800 text-xl">STEKOM</p>
-                            </div>
-                        </div>
-
-                        <!-- Foto 6 -->
-                        <div
-                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                            <img src="./images/grup_6.webp" alt=""
-                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
-                            <div class="p-4 text-center">
-                                <p class="name font-semibold text-blue-800 text-xl">Pesantren Kilat</p>
-                            </div>
-                        </div>
-
-                        <!-- Foto 7 -->
-                        <div
-                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                            <img src="./images/grup_7.webp" alt=""
-                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
-                            <div class="p-4 text-center">
-                                <p class="name font-semibold text-blue-800 text-xl">Bersama Walikelas</p>
-                            </div>
-                        </div>
-
-                        <!-- Foto 8 -->
-                        <div
-                            class="member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-orange-500">
-                            <img src="./images/grup_8.webp" alt=""
-                                class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
-                            <div class="p-4 text-center">
-                                <p class="name font-semibold text-blue-800 text-xl">Pagelaran</p>
-                            </div>
-                        </div>
-
                     </div>
+                    <button id="next"
+                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full shadow-md hover:bg-gray-700 z-10">
+                        →
+                    </button>
+                    <script>
+                        const members = [
+                            { img: "./images/grup_1.webp", name: "Buka Bersama" },
+                            { img: "./images/grup_2.webp", name: "Buka Bersama" },
+                            { img: "./images/grup_3.webp", name: "MPLS" },
+                            { img: "./images/grup_4.webp", name: "-" },
+                            { img: "./images/grup_5.webp", name: "STEKOM" },
+                            { img: "./images/grup_6.webp", name: "Pesantren Kilat" },
+                            { img: "./images/grup_7.webp", name: "Fotbar" },
+                            { img: "./images/grup_8.webp", name: "Pagelaran" },
+                        ];
+
+                        const container = document.getElementById("slider");
+
+                        members.forEach(member => {
+                            const div = document.createElement("div");
+                            div.className = "member min-w-[80%] md:min-w-[50%] lg:min-w-[40%] snap-center relative bg-white rounded-xl overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 border-4 border-blue-500";
+
+                            div.innerHTML = `
+                                    <img src="${member.img}" alt="${member.name}" class="w-full h-64 object-cover border-b-4 border-blue-600" loading="lazy">
+                                    <div class="p-4 text-center">
+                                        <p class="name font-semibold text-blue-800 text-xl">${member.name}</p>
+                                    </div>
+                                `;
+
+                            container.appendChild(div);
+                        });
+                    </script>
 
                     <!-- Grid Anggota -->
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8 py-8">
