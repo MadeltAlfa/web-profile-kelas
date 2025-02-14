@@ -7,12 +7,81 @@
     <title>Famous Profil</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(10px, 10px) rotate(3deg);
+            }
+
+            50% {
+                transform: translate(-10px, 5px) rotate(-3deg);
+            }
+
+            75% {
+                transform: translate(5px, -5px) rotate(2deg);
+            }
+        }
+
+        @keyframes float-slow {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .animate-float {
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .animate-float-slow {
+            animation: float-slow 6s ease-in-out infinite;
+        }
+
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+
+        .drop-shadow-0-2px-4px-rgba {
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+        }
+    </style>
 </head>
 
 <body class="bg-slate-50 font-sans leading-relaxed text-slate-800">
-    <div class="min-h-screen bg-gradient-to-br from-blue-600 via-purple-700 to-pink-500 bg-fixed">
-        <header class="text-center py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white shadow-lg mb-12">
-            <h1 class="text-4xl font-bold tracking-tight">FAMOUS SMABAH</h1>
+
+
+    <div
+        class="min-h-screen bg-gradient-to-br from-blue-600 via-purple-700 to-pink-500 bg-fixed relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div
+                class="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-300/20 rounded-full blur-2xl animate-float">
+            </div>
+            <div
+                class="absolute -bottom-20 -right-20 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-cyan-300/20 rounded-full blur-2xl animate-float animation-delay-2000">
+            </div>
+        </div>
+
+        <header
+            class="text-center py-16 backdrop-blur-xl bg-white/10 shadow-2xl mb-12 mx-4 rounded-xl border border-white/20 relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-pink-500/30 rounded-xl -z-10"></div>
+            <h1
+                class="text-4xl font-bold tracking-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] animate-float-slow">
+                FAMOUS SMABAH
+            </h1>
+
+
         </header>
 
         <div class="container mx-auto px-4 mt-4">
